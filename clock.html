@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clock</title>
+
+    <style>
+        .js-form,
+        .js-greeting {display: none;}
+        .showing {display: block;}
+        .bgImage {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; animation: fadeIn .5s linear;}
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            } to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="js-clock">
+        <h1></h1>
+    </div>
+    <form class="js-form">
+        <input type="text" placeholder="what is your name?">
+    </form>
+    <h4 class="js-greetings"></h4>
+    <form class="js-toDoForm">
+        <input type="text" placeholder="Write a to do">
+    </form>
+    <ul class="js-toDoList">
+    </ul>
+    <div class="js-weather">
+        <span class="weather__text"></span>
+    </div>
+    <script src="clock.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
